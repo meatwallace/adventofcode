@@ -1,11 +1,11 @@
 import fs from 'fs-extra';
 import path from 'path'
-import { parseSonarData } from './parseSonarData'
+import {parseSonarData} from './parseSonarData'
 
-(async () => {
+export async function runDayOne() {
   const depthLog = await fs.readFile(path.join(__dirname, './input'), 'utf8')
 
-  const summary = parseSonarData({ depthLog })
+  const summary = await parseSonarData({depthLog})
 
   console.log(summary);
-})();
+}

@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node ./20211206/index.ts",
+    "start": "ts-node ./days/index.ts",
     "test": "jest"
   },
   "devDependencies": {
